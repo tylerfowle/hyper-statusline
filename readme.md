@@ -1,3 +1,7 @@
+# Modified hyper-statusline 
+
+removed git info since it causes git locks in large repos.  this is a stop gap until the offical gets fixed.
+
 # hyper-statusline [![npm](https://img.shields.io/npm/v/hyper-statusline.svg?maxAge=86400?style=flat-square)](https://www.npmjs.com/package/hyper-statusline) [![npm](https://img.shields.io/npm/dt/hyper-statusline.svg?maxAge=86400?style=flat-square)](https://www.npmjs.com/package/hyper-statusline)
 
 > Status Line Plugin for [Hyper](https://hyper.is). Shows clickable & useful information. Matches any theme.
@@ -21,36 +25,6 @@ module.exports = {
 ## Config
 
 Add following to `~/.hyper.js`.
-
-### Change Git Dirty Color
-Expected value is `CSS colors`
-
-```javascript
-module.exports = {
-  config: {
-    ...
-      hyperStatusLine: {
-        dirtyColor: 'salmon',
-      }
-    ...
-  }
-}
-```
-
-### Change Git Arrows Color
-Expected value is `CSS colors`
-
-```javascript
-module.exports = {
-  config: {
-    ...
-      hyperStatusLine: {
-        arrowsColor: 'ivory',
-      }
-    ...
-  }
-}
-```
 
 ### Disable Footer Transparency
 Default value is set to `true`
